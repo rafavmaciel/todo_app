@@ -21,7 +21,7 @@ module.exports = (app) => {
         const sqlInsert = "SELECT * FROM todo_db.tarefa order by dateEnd ASC;";
         app.db.query(sqlInsert, (err, result) => {
             res.send(result);
-            console.log(result)
+            //console.log(result)
         });
     };
 
